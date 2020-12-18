@@ -35,9 +35,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<h2 class="post__title"><?php $this->title(); ?></h2>
 				<div class="post__description conts" id="j-article"> 
 				<?php $str=$this->content; echo costcn($this->cid,$this->remember('mail',true),$str,$this->user->hasLogin()); ?>				                      
-<!--赞赏-->
-		<?php $this->need('assets/post - shang.php'); ?>
-<!--赞赏end-->
+                <div class="donate-panel" style="text-align:center;margin-top:15px;"><?php Typecho_Plugin::factory('rootvip.cn.Donate')->Donate(); ?></div>               
 				</div> 
 				<?php if ($this->fields->Copyrightnew =='0'):?>
                 <div class="Copyrightnew"><svg viewBox="0 0 1024 1024" style="width: 18px;height: 18px;min-width: 18px;min-height: 18px;margin-right: 8px;">
