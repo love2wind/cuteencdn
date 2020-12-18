@@ -1,1 +1,1 @@
-# cuteencdn
+# Some site CDN
