@@ -54,7 +54,8 @@ $uid = $this->user->uid; //登录时，显示用户各自的私密文章
  <?php if($this->is('index') && $this->_currentPage == 1): ?>
 <!-- swiper -->
 <div class="col-12 col-md-7 col-lg-8 col-xl-9">
-					<div class="row pagecontent">
+			<?php $this->need('index - hpian.php'); ?>
+			<div class="row pagecontent">
 						
 
 <?php 
@@ -85,7 +86,7 @@ $html=$html.'<div class="col-12 col-sm-6 col-md-12 col-lg-4 pagepost tran col-lv
 </div>
 <div class="profile__actions">
 <div class="post__location">
-<i class="icon ion-ios-navigate"></i>
+<i class="icon iconfont icon-ic_repost_line"></i>
 <span>'.$jis->fields->leix.'</span>
 </div><div class="post__actions">
 '.$slei.'
@@ -103,11 +104,6 @@ echo $html;
 </div>
 <!-- end swiper -->
 <?php endif; ?>
-
-
- 
-			
-
    
                  <?php if($this->is('index') && $this->_currentPage == 1): ?>
                 <!-- user -ping -->
@@ -147,23 +143,41 @@ echo $html;
 							
 							<div class="main__box">
 								<h3 class="main__box-title">About</h3>
-								<p class="main__box-text">在浏览设计，运营，优化，建站等资料文章时，感觉到很多新手都碰到各种各样的问题，同时网上真正分享经验比较少。我何不一边学习，一边分享我积累的经验呢。
-所以建立了这个网站。
-See you in BLOG…
-</p>
-								<p class="main__box-text">When browsing design, operation, optimization, website building and other materials and articles, I feel that many novices are confronted with various problems, at the same time, there is less real experience sharing online. Why don't I share my experience while learning.
-
-So we set up this website.
-
-See you in BLOG…</p>
+								<p class="main__box-text">本站是一群志同道合的小伙们发起并成立的一个致力于EPUB电子书排版制作的平台，我们的宗旨是让每个人都能读到精致、美观的电子书，让阅读成为一种享受，欢迎广大书友加入我们。</p>
+								<p class="main__box-text">This site is a platform dedicated to EPUB e-book layout and production initiated and established by a group of like-minded guys. Our aim is to allow everyone to read exquisite and beautiful e-books and make reading a pleasure. Welcome Book friends join us.</p>
 							</div>
 						
                             
 							
 							<div class="main__box">
-								<h3 class="main__box-title">持续的过程</h3>
-								<p class="main__box-text">我认为学习是一个持续的过程 ，不可能一劳永逸，所以总会做出一些新鲜东西给你看。</p>
-								<p class="main__box-text">I think learning is a continuous process, it can't be once and for all, so there will always be something new to show you.</p>
+								<h3 class="main__box-title">关注我们</h3>
+								<div style="align:center;"><table style="text-align:center;border: 0;padding: 0;margin:0;">
+									<tbody border: 0;>
+										<tr>
+											<td style="text-align:center;border: 0;padding: 0 5px;">
+												<img src="https://nicepub.top/wp-content/uploads/2019/11/weixin_big.png"
+												alt="我的微信" style="width:150px;">
+												<p style="text-align:center;">
+													我的微信
+												</p>
+											</td>
+											<td style="text-align:center;border: 0;padding: 0 5px;">
+												<img src="https://nicepub.top/wp-content/uploads/2019/11/gongzhonghao.png"
+												alt="我的公众号" style="width:150px;">
+												<p style="text-align:center;">
+													我的公众号
+												</p>
+											</td>
+														<td style="text-align:center;border: 0;padding: 0 5px;">
+												<img src="https://nicepub.top/wp-content/uploads/2019/11/M_weibo_big.png"
+												alt="官方微博" style="width:150px;">
+												<p style="text-align:center;">
+													官方微博
+												</p>
+											</td>
+										</tr>
+									</tbody>
+								</table></div>
 							</div>
 							
 
@@ -219,7 +233,7 @@ See you in BLOG…</p>
 									</div>
 
 									<div class="col-12">
-										<button class="form__btn" type="submit" name="dosubmit"><span>Send</span></button>
+										<button class="form__btn" type="submit" name="dosubmit"><span>发送</span></button>
 									</div>
 								</div>
 							</form>
