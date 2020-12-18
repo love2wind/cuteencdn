@@ -21,14 +21,14 @@
 .shang_box {
 	color:#fff;
 	width:800px;
-	height:560px;
+	height:550px;
 	padding:10px;
 	background-color:#d8d7d7;
 	border-radius:10px;
 	position:fixed;
 	z-index:1000;
 	left:40%;
-	top:40%;
+	top:35%;
 	margin-left:-280px;
 	margin-top:-280px;
 	border: 2px solid #dc5f06;
@@ -44,13 +44,12 @@ display: initial;}
 	margin:5px auto;
 	height:auto;
 	line-height:25px;
-	padding:10px 15px;
+	padding:8px 15px;
 	text-align:center;
 	text-decoration:none;
-	font-weight:bold;
 	font-size:16px;
 	transition:all 0.3s;
-	font-weight:500;
+	font-weight:400;
 	outline:0!important;
 	color:#fff!important;
 	background-color:#f05050;
