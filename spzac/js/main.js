@@ -116,9 +116,9 @@ jQuery( function ( $ ) {
 		$(".livechat-hint").removeClass("show_hint").addClass("hide_hint");
 	}).click(function(){	
         if(isMobile.any()){
-			 window.location.href = 'mqqwpa://im/chat?chat_type=wpa&uin=872872015&version=1&src_type=web&web_src=oicqzone.com';
+			 window.location.href = 'mqqwpa://im/chat?chat_type=wpa&uin=43675770&version=1&src_type=web&web_src=oicqzone.com';
 		}else{
-			  window.open("http://wpa.qq.com/msgrd?v=3&uin=872872015&site=qq&menu=yes"); 
+			  window.open("http://wpa.qq.com/msgrd?v=3&uin=43675770&site=qq&menu=yes"); 
           }
 	}); 
 } );

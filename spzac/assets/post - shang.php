@@ -1,7 +1,7 @@
 <style type="text/css">
 .shang_content {
 	width:80%;
-	margin:20px auto;
+	margin:20px auto 5px auto;
 	text-align:center;
 }
 }
@@ -28,7 +28,7 @@
 	position:fixed;
 	z-index:1000;
 	left:40%;
-	top:35%;
+	top:45%;
 	margin-left:-280px;
 	margin-top:-280px;
 	border: 2px solid #dc5f06;
@@ -41,10 +41,9 @@ display: initial;}
 .dashang {
 	display:block;
 	width:100px;
-	margin:5px auto;
+	margin:10px auto;
 	height:auto;
-	line-height:25px;
-	padding:8px 15px;
+	padding:7px 18px;
 	text-align:center;
 	text-decoration:none;
 	font-size:16px;
@@ -54,7 +53,7 @@ display: initial;}
 	color:#fff!important;
 	background-color:#f05050;
 	border-color:#f05050;
-	border-radius:50px;
+	border-radius:70px;
 	margin-bottom:20px;
 }
 /*.dashang:hover {
@@ -136,7 +135,7 @@ display: initial;}
 <div class="shang_content">
 <p><a href="javascript:void(0)" onClick="dashangToggle()" class="dashang" title="打赏，支持一下"><svg t="1608258227508" class="icon" viewBox="0 0 1024 1024" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="18145" width="18" height="18"><path d="M512 640c0-35.36 28.64-64 64-64s64 28.64 64 64c0 35.36-28.64 64-64 64s-64-28.64-64-64zM928.032 416c-0.032 0-0.032 0 0 0l-0.032-192 0-96c0-53.024-43.008-96-96-96l-656 0c-97.056 0-176 78.976-176 176l0 640c0 97.024 78.944 176 176 176l576 0c97.024 0 176-78.976 176-176l0-48c0 0 0 0 0.032 0 127.936-96.032 127.936-287.968 0-384zM176 96l656 0c17.632 0 32 14.336 32 32l0 197.888c-10.048-3.584-20.736-5.888-32-5.888l-0.032 0 0-160c0-17.696-14.336-32-32-32l-672 0c-17.664 0-32 14.304-32 32l0 126.176c-19.744-20.192-31.968-47.712-31.968-78.176 0-61.856 50.112-112 112-112zM799.968 192l-672 0 0-32 672 0 0 32zM799.968 224l0 32-672 0 0-32 672 0zM799.968 288l0 32-623.968 0c-17.28 0-33.408-4.224-48-11.2l0-20.8 671.968 0zM864 848c0 61.856-50.144 112-112 112l-576 0c-61.888 0-112-50.144-112-112l0-504.352c30.432 25.184 69.472 40.352 112 40.352l656 0c17.632 0 32 14.336 32 32l0 64-288 0c-88.384 0-160 71.616-160 160s71.648 160 160 160l288 0 0 48zM904.864 736l-328.864 0c-52.928 0-96-43.072-96-96s43.072-96 96-96l288 0c19.744-0.256 39.328-9.824 51.264-25.728 3.328-4.48 5.92-9.504 8-14.752 0.288-0.704 0.8-1.248 1.056-1.984 23.008 30.176 35.68 67.168 35.68 106.464 0 49.216-19.872 94.88-55.136 128z" p-id="18146" fill="#ffffff"></path></svg>
 		&nbsp;赞&nbsp;&nbsp;赏</a></p>
-			<p style="color:#999999;"><span>如果觉得我的文章对你有用，请随意赞赏</span></p>
+			<p style="color:#999999;font-size:14px;line-height:110%;"><span>如果觉得我的文章对你有用，请随意赞赏</span></p>
 <div class="hide_box"></div>
 <div class="shang_box">
 	<a class="shang_close" href="javascript:void(0)" onClick="dashangToggle()" title="关闭"><svg t="1608276676282" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="24845" width="20" height="20" alt="取消"><path d="M497 90c246.319 0 446 199.681 446 446S743.319 982 497 982 51 782.319 51 536 250.681 90 497 90z m175.534 270.444c-11.672-11.671-30.595-11.671-42.266 0L496.156 494.556l-133.302-133.3-0.505-0.492c-11.706-11.176-30.257-11.012-41.761 0.493-11.672 11.671-11.672 30.595 0 42.266L453.89 536.822l-132.44 132.44-0.494 0.505c-11.176 11.706-11.012 30.257 0.493 41.762 11.672 11.671 30.595 11.671 42.266 0l132.44-132.441 133.258 133.26 0.505 0.494c11.706 11.176 30.256 11.011 41.761-0.494 11.672-11.671 11.672-30.594 0-42.266l-133.257-133.26L672.534 402.71l0.493-0.504c11.176-11.706 11.011-30.257-0.493-41.762z" fill="#d81e06" p-id="24846"></path></svg></a>
@@ -144,7 +143,7 @@ display: initial;}
 		<p>感谢您的支持，我会继续努力的!</p>
 	</div>
 	<div class="shang_payimg">
-		<img src="https://imgsrc.xyz/images/2020/09/29/a707318c6b48d28d44789bebbca8bc1d.png" alt="扫码支持" title="扫一扫" width="600" height="345"/>
+		<img src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.0/spzac/img/qcode.png" alt="扫码支持" title="扫一扫" width="600" height="345"/>
 	</div>
 		<div class="pay_explain">扫码打赏，你说多少就多少</div>
 <!--	<div class="shang_payselect">

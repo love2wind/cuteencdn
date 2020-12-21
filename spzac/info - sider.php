@@ -1,5 +1,5 @@
 <div class="col-12 col-md-5 col-lg-4 col-xl-3 fixsidenav">
-                    <?php if ($this->is('post','page')): ?>
+                    <?php if ($this->is('post')): ?>
                     <!-- user -->
 					<div class="user">
 						<div class="user__head">
@@ -125,7 +125,7 @@ while($recent->next()):
 <h4 class="sidebox__title">最新评论</h4>
 <i class="bg-primary"></i>
 <div class="sidebox__content" id="rctrly">
-<?php $this->widget('Widget_Comments_Recent','ignoreAuthor=false&pageSize=5')->to($comments); ?>
+<?php $this->widget('Widget_Comments_Recent','ignoreAuthor=false&pageSize=3')->to($comments); ?>
 <?php while($comments->next()): ?>
 <div class="post__comment commentping">
 <a href="<?php $comments->permalink(); ?>" class="post__comment-img">

@@ -645,7 +645,7 @@ if ( strpos( $str, '[msigle')!== false) {//提高效率，避免每篇文章都�
 }  
 if ( strpos( $str, '[mlist')!== false) {//提高效率，避免每篇文章都要解析
   //[scode class="red"]这里编辑标签内容//[/scode]   
-   $str = preg_replace("/\[mlist\](.*?)\[\/mlist\]/sm",'<iframe class="iframe-music" frameborder="no" border="0" width="330" height="450" src="//music.163.com/outchain/player?type=0&id=$1&auto=0&height=430"></iframe>',$str);
+   $str = preg_replace("/\[mlist\](.*?)\[\/mlist\]/sm",'<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=$1&auto=0&height=430"></iframe>',$str);
 }
 if ( strpos( $str, '[vbili')!== false) {//提高效率，避免每篇文章都要解析
   //[scode class="red"]这里编辑标签内容//[/scode]   

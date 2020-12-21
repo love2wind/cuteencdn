@@ -1,4 +1,5 @@
- <link rel="stylesheet" href="<?php $this->options->themeUrl('css/swiper.min.css'); ?>">
+ <!--<link rel="stylesheet" href="<?php //$this->options->themeUrl('css/swiper.min.css'); ?>">-->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.0/spzac/css/swiper.min.css">
  <style>
    .Swiper_bl{
     background-color: white;
