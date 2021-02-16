@@ -7,7 +7,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/bootstrap-reboot.min.css'); ?>">
 	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/bootstrap-grid.min.css'); ?>">
-	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/ionicons.min.css'); ?>">
+	<!--<link rel="stylesheet" href="<?php //$this->options->themeUrl('css/ionicons.min.css'); ?>">-->
 	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/main.css'); ?>"> 
 	<meta name="author" content="小小灯泡">
 	<title><?php if($this->_currentPage>1) echo '第 '.$this->_currentPage.' 页 - '; ?><?php $this->archiveTitle(array(
