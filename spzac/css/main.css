@@ -385,7 +385,16 @@ padding-left: 0px!important;
   display: block;
   width: 100%;
 }
-
+.msg_remind {
+    display: inline;
+    width: 8px;
+    height: 8px;
+    background-color: #f01414;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
 a:hover {   
        text-decoration: none !important;
 }
@@ -470,7 +479,7 @@ a:hover {
   line-height: 100%;
   width: 15px;
 }
-.header__dropdown-menu a:hover {
+.header__dropdown-menu a:hover,.header__dropdown-menu a:hover i {
   color: #3796f6;
 }
 .header__dropdown-menu a.header__ntf-more {
@@ -494,7 +503,8 @@ a:hover {
 }
 .header__dropdown-menu--ntf {
   padding: 0;
-  min-width: 260px;
+  min-width: 260px !important;
+  padding: 0px !important;
 }
 .header__search {
   display: none;
@@ -707,7 +717,7 @@ a:hover {
     width: 30px;
     height: 34px;
     right: -30px;    
-    background: url(../../spzac/img/upiocn.png) no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/upiocn.png) no-repeat;
     z-index: 20;
     top: 0;
 }
@@ -894,22 +904,15 @@ a:hover {
   -moz-transition: 0.4s ease;
   transition: 0.4s ease;
   position: relative;
-  margin-right: 36px;
   line-height: 18px;
 }
-.breadcrumb__item:before {
-  content: '\f119';
-  position: absolute;
-  font-family: "Ionicons";
-  color: #8599ab;
-  left: 100%;
-  top: 0;
-  font-size: 18px;
-  line-height: 20px;
-  margin-left: 12px;
+.separator {
+    font-weight: 900;
+    color: #8599ab;
+    padding: 0 4px 0 8px;
 }
-.breadcrumb__item:hover {
-  color: #3796f6;
+.breadcrumb__item:hover, {
+  color: #ff0036;
 }
 .breadcrumb__item--active {
   cursor: default;
@@ -921,11 +924,16 @@ a:hover {
 .breadcrumb__item--active:hover {
   color: #8599ab;
 }
-.breadcrumb a {
+.breadcrumb a,.breadcrumb__item span {
   color: #364e65;
 }
 .breadcrumb a:hover {
   color: #3796f6;
+}
+.breadcrumb svg {
+  color: #3796f6;
+  overflow: initial;
+  vertical-align: top;
 }
 /*==============================
 	Main
@@ -1219,6 +1227,30 @@ a:hover {
 /*==============================
 	User
 ==============================*/
+.bg_color{
+
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .user {
   position: relative;
   margin-bottom: 20px;
@@ -1273,6 +1305,40 @@ a:hover {
   padding: 60px 20px 20px;
   border-left: 1px solid rgba(133,153,171,0.2);
   border-right: 1px solid rgba(133,153,171,0.2);
+}
+.down_tips {
+      display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+    border-left: 1px solid rgba(133,153,171,0.2);
+    border-right: 1px solid rgba(133,153,171,0.2);
+}
+.down_tips p {
+    margin-bottom: 0;
+    line-height: 100%;
+    font-size: 14px;
+    color: #8599ab;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #f3f7ff;
+    width: 100%;
+    text-align: center;
+}
+.down_tips a{
+  color: #fa7268;
 }
 
 .user__title h2 {
@@ -2478,16 +2544,20 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 ==============================*/
 .egg{background-position: right 0% center;
     background-repeat: no-repeat;
-    background-size: auto 90%;}
-.elv1{background-image: url(../../spzac/img/egg/bg-ico1.png);}
-.elv2{background-image: url(../../spzac/img/egg/bg-ico2.png);}
-.elv3{background-image: url(../../spzac/img/egg/bg-ico3.png);}
-.elv5{background-image: url(../../spzac/img/egg/bg-ico5.png);}
-.elv7{background-image: url(../../spzac/img/egg/bg-ico7.png);}
-.elv46{background-image: url(../../spzac/img/egg/bg-ico46.png);}
-.elv48{background-image: url(../../spzac/img/egg/bg-ico48.png);}
-.elv53{background-image: url(../../spzac/img/egg/bg-ico53.png);}
-.elv73{background-image: url(../../spzac/img/egg/bg-ico73.png);}
+    background-size: auto 100%;}
+.elv1{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico1.png);}
+.elv14{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico14.png);}
+.elv15{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico15.png);}
+.elv24{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico24.png);}
+.elv516{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico516.png);}
+.elv517{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico517.png);}
+.elv599{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico599.png);}
+.elv601{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico601.png);}
+.elv602{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico602.png);}
+.elv604{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico604.png);}
+.elv619{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico619.png);}
+.elv620{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico620.png);}
+.elv622{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico622.png);}
 /*==============================
 	Post
 ==============================*/
@@ -2516,6 +2586,22 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   -ms-flex-align: start;
   align-items: flex-start;
   margin-bottom: 20px;
+}
+.contribute {
+   width: 100%;
+   padding: 20px;    
+   border-radius: 4px;
+}
+.contribute form{
+  width: 100%;
+}
+.contribute .editor{
+  width: 100%;
+  margin: 20px 0;
+}
+.contribute textarea{
+  width: 100%;
+      min-height: 600px;
 }
 .post--clear {
   padding: 20px 20px 0;
@@ -2562,8 +2648,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   width: 100%;
 }
 .autlv {
-	font-size: 8px;
-    color: #fff;
+    font-size: 8px !important;
+    color: #fff  !important;
     display: inline-block;
     vertical-align: text-top;
     font-weight: normal;
@@ -2601,7 +2687,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 	background: #f64444;
 }
 
-.c_con .post__title{font-size: 24px;margin: 10px 0;}
+.c_con .post__title{font-size: 24px;margin: 10px 0 15px 0;color: #000;}
 .c_head{border-bottom: 1px solid #efefef; padding-bottom: 10px;}
 .c_con .tepasspost{    width: 100%;}
 .c_con .c-demo .btn_reward{ 
@@ -3097,6 +3183,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 
 .c-demo{ width: 100%;text-align: center;}
+.c-tips{ font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: grey;}
 .c-btn--primary {
     background-color: #f1787f;
     color: #fff;
@@ -3152,16 +3242,16 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-size: 1.125rem;
     padding-left: 20px;
 }
-.post__description h3:before {
+/*.post__description h3:before {
     content: '';
     position: absolute;
-    top: 12px;
+    top: 15px;
     left: 0;
-    height: 5px;
-    width: 5px;
-    border-radius: 20px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50px;
     background-color: #448EF6;
-}
+}*/
 .post__description hr{margin: 30px 0;}
 .post__description blockquote {
     position: relative;
@@ -3206,9 +3296,14 @@ th {
 .post__description p {
   font-size: 15px;
   line-height: 24px;
-  color: #345471;
- 
+  color: #345471; 
 }
+.post__description hr{
+height: 1px;
+    margin: 32px 0;
+    border: 0;
+    background-color: #EBF1F8;
+}  
 .post__description h2 {
     font-size: 1.25rem;
     border-left: 3px solid #448EF6;
@@ -3240,7 +3335,7 @@ th {
   height: 4px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background-color: #3796f6;
+  background-color: #353c44;
   left: 0;
   top: 50%;
   margin-top: -2px;
@@ -3250,6 +3345,7 @@ th {
   font-weight: 600;
   font-size: 14px;
   margin-top: 5px;
+  word-wrap:break-word
 }
 .post__description a:hover {
   color: #fa7268;
@@ -3347,6 +3443,7 @@ th {
   margin-right: 7px;
   font-size: 16px;
   line-height: 14px;
+      color: #8599ab;
 }
 .post__stats div span {
   margin-bottom: 3px;
@@ -3356,6 +3453,7 @@ th {
 }
 .post__stats div.post__views i {
   font-size: 18px;
+      color: #8599ab;
 }
 .post__stats div.post__views span {
   margin-bottom: 1px;
@@ -3559,7 +3657,7 @@ display: inline-block;
     overflow: hidden;
 	margin-bottom: 0rem;
 }
-.post__comment-text img{    width: 20px;    margin: 0 5px;}
+.post__comment-text img{ width: 20px; margin: 0 5px 0 0px; vertical-align: text-bottom;}
 .post__apply {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4092,24 +4190,130 @@ display: inline-block;
   font-size: 14px;
   margin-bottom: 12px;
   position: relative;
-  padding-left: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.faq__box ul li:before {
-  content: '';
+.faq__box ul li i{
+     padding-right: 8px;
+}
+/*.faq__box ul li:before {
+  content: "\e63f";
   position: absolute;
-  font-family: "Ionicons";
+  font-family: "iconfont";
   color: #3796f6;
+  padding-right: 8px;
   left: 0;
   font-size: 16px;
-}
+}*/
 .faq__box ul li a {
   color: #364e65;
 }
+.faq__box ul li a{   
+    text-overflow: ellipsis;
+    white-space: nowrap;  
+    width: 80%;
+	display: inline-block;
+    overflow: hidden;
+	}
 .faq__box ul li a:hover {
   color: #fa7268;
 }
 .faq__box ul li:last-child {
   margin-bottom: 0;
+}*/
+
+.faq {
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 2px 26px 0 rgba(133,153,171,0.1);
+  box-shadow: 0 2px 26px 0 rgba(133,153,171,0.1);
+  padding: 0 20px 10px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid rgba(133,153,171,0.2);
+}
+.faq__box {
+  margin-bottom: 10px;
+}
+.faq__box h3 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #364e65;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  height: 60px;
+  border-bottom: 1px solid rgba(133,153,171,0.2);
+}
+.seoxue .faq__box ul li{
+  display: block;
+}
+.seoxue .post__views{
+      float: right;
+}
+.faq__box ul li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #364e65;
+  font-size: 14px;
+  margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.faq__box ul li i{
+     padding-right: 8px;
+}
+.faq__box ul li a {
+  color: #364e65;
+}
+.faq__box ul li a{
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+  width: 80%;
+  display: inline-block;
+  overflow: hidden;
+  }
+.faq__box ul li a:hover {
+  color: #fa7268;
+}
+.faq__box ul li:last-child {
+  margin-bottom: 0;
+}
+.i_fuei{
+  color: #f30;
+}
+.i_free{
+  color: #8599ab !important;
 }
 /*==============================
 	Contacts
@@ -5015,7 +5219,8 @@ display: inline-block;
   width: 40px;
   height: 40px;
   color: #fff;
-  background: linear-gradient(45deg, rgba(55,150,246,0.5) 0%, rgba(55,150,246,0.05) 100%);
+/*  background: linear-gradient(45deg, rgba(55,150,246,0.5) 0%, rgba(55,150,246,0.05) 100%);*/
+  background: #ff0036;
   position: absolute;
   right: 0;
   bottom: 40px;
@@ -5025,7 +5230,7 @@ display: inline-block;
   line-height: 26px;
   overflow: hidden;
 }
-.footer__back:before {
+/*.footer__back:before {
   content: '';
   position: absolute;
   top: 0;
@@ -5042,8 +5247,9 @@ display: inline-block;
 .footer__back i {
   position: relative;
   z-index: 2;
-}
+}*/
 .footer__back:hover {
+  background: #3796f6;
   color: #3796f6;
 }
 .footer__back:hover:before {
@@ -5264,84 +5470,84 @@ display: inline-block;
 .comment-ua{font-size: 10px;}
 
 .icon-360 {
-	background-image: url(../../spzac/icon/UA/360.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/360.png)
 }
 
 .icon-android {
-	background-image: url(../../spzac/icon/UA/android.png);
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/android.png);
 	height: 19px
 }
 
 .icon-apple {
-	background-image: url(../../spzac/icon/UA/apple.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/apple.png)
 }
 
 .icon-baidu {
-	background-image: url(../../spzac/icon/UA/baidu.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/baidu.png)
 }
 
 .icon-chrome {
-	background-image: url(../../spzac/icon/UA/chrome.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/chrome.png)
 }
 
 .icon-edge {
-	background-image: url(../../spzac/icon/UA/edge.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/edge.png)
 }
 
 .icon-firefox {
-	background-image: url(../../spzac/icon/UA/firefox.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/firefox.png)
 }
 
 .icon-google {
-	background-image: url(../../spzac/icon/UA/google.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/google.png)
 }
 
 .icon-ie {
-	background-image: url(../../spzac/icon/UA/ie.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/ie.png)
 }
 
 .icon-liebao {
-	background-image: url(../../spzac/icon/UA/liebao.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/liebao.png)
 }
 
 .icon-linux {
-	background-image: url(../../spzac/icon/UA/linux.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/linux.png)
 }
 
 .icon-mac {
-	background-image: url(../../spzac/icon/UA/mac.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/mac.png)
 }
 
 .icon-opera {
-	background-image: url(../../spzac/icon/UA/opera.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/opera.png)
 }
 
 .icon-qq {
-	background-image: url(../../spzac/icon/UA/qq.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/qq.png)
 }
 
 .icon-quark {
-	background-image: url(../../spzac/icon/UA/quark.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/quark.png)
 }
 
 .icon-safari {
-	background-image: url(../../spzac/icon/UA/safari.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/safari.png)
 }
 
 .icon-ubuntu {
-	background-image: url(../../spzac/icon/UA/ubuntu.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/ubuntu.png)
 }
 
 .icon-uc {
-	background-image: url(../../spzac/icon/UA/uc.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/uc.png)
 }
 
 .icon-win1 {
-	background-image: url(../../spzac/icon/UA/win1.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/win1.png)
 }
 
 .icon-win2 {
-	background-image: url(../../spzac/icon/UA/win2.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/win2.png)
 }
 
 
@@ -5943,7 +6149,7 @@ position: relative;
 .comiis_poster_x {
 	width: 100%;
 	height: 45px;
-	background: url(../../spzac/poster/img/poster_x.jpg) repeat-x center;
+	background: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/poster/img/poster_x.jpg) repeat-x center;
 	overflow: hidden
 }
 

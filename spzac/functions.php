@@ -305,7 +305,7 @@ function getGravatar($email, $s = 96, $d = 'mp', $r = 'g', $img = false, $atts =
 {
 preg_match_all('/((\d)*)@qq.com/', $email, $vai);
 if (empty($vai['1']['0'])) {
-    $url = 'https://www.gravatar.com/avatar/';
+    $url = 'https://gravatar.helingqi.com/wavatar/';
     $url .= md5(strtolower(trim($email)));
     $url .= "?s=$s&d=$d&r=$r";
     if ($img) {
@@ -446,19 +446,19 @@ function listdeng($archive){
         $db->query('ALTER TABLE `'.$db->getPrefix().'contents` ADD `views` INT(10) DEFAULT 0;');
     }
     $exist = $db->fetchRow($db->select('views')->from('table.contents')->where('cid = ?', $cid))['views'];
-    if($exist<200){
+    if($exist<5){
    /** echo '<span class="badge arc_v1"></span>';**/
-    }elseif ($exist<500 && $exist>200) {
+    }elseif ($exist<20 && $exist>5) {
     echo '<span class="badge arc_v2">新秀</span>';
-    }elseif ($exist<1000 && $exist>=500) {
+    }elseif ($exist<50 && $exist>=20) {
     echo '<span class="badge arc_v3">推荐</span>';
-    }elseif ($exist<5000 && $exist>=1000) {
+    }elseif ($exist<1000 && $exist>=50) {
     echo '<span class="badge arc_v4">热文</span>';
-    }elseif ($exist<10000 && $exist>=5000) {
+    }elseif ($exist<200 && $exist>=100) {
     echo '<span class="badge arc_v5">头条</span>';
-    }elseif ($exist<30000 && $exist>=10000) {
+    }elseif ($exist<500 && $exist>=200) {
     echo '<span class="badge arc_v6">火爆</span>';
-    }elseif ($exist>=30000) {
+    }elseif ($exist>=500) {
     echo '<span class="badge arc_v7">神贴</span>';
     }
 }
@@ -511,7 +511,7 @@ if($result){
        
             $strimg = $img;   
             if ($strimg){$strimg=$strimg;}else{$strimg = "/usr/themes/spzac/img/adimg.png";}
-        echo '<li><a href="'.$permalink.'">'.$post_title.'</a></li>';
+        echo '<li><svg t="1608184042869" class="icon" viewBox="0 0 1024 1024" version="1.1" style="margin-right:8px;margin-bottom:2px;" xmlns="http://www.w3.org/2000/svg" p-id="15804" width="18" height="18"><path d="M401.92 263.68c-10.24-10.24-25.6-10.24-35.84 0-10.24 10.24-10.24 25.6 0 35.84l212.48 212.48-212.48 212.48c-10.24 10.24-10.24 25.6 0 35.84 10.24 10.24 25.6 10.24 35.84 0l230.4-227.84c5.12-5.12 7.68-12.8 7.68-20.48 0-7.68-2.56-15.36-7.68-20.48l-230.4-227.84zM819.2 102.4H204.8C148.48 102.4 102.4 148.48 102.4 204.8v614.4c0 56.32 46.08 102.4 102.4 102.4h614.4c56.32 0 102.4-46.08 102.4-102.4V204.8c0-56.32-46.08-102.4-102.4-102.4z m51.2 716.8c0 28.16-23.04 51.2-51.2 51.2H204.8c-28.16 0-51.2-23.04-51.2-51.2V204.8c0-28.16 23.04-51.2 51.2-51.2h614.4c28.16 0 51.2 23.04 51.2 51.2v614.4z" p-id="15805" fill="#333333"></path></svg><a href="'.$permalink.'">'.$post_title.'</a></li>';
 
 
     
@@ -639,13 +639,42 @@ else{
     $str = preg_replace("/\[hide\](.*?)\[\/hide\]/sm",'<div class="reply2view">此处内容需要评论回复后</div>',$str);
 }  
 }  
+if ( strpos( $str, '[msigle')!== false) {//提高效率，避免每篇文章都要解析
+  //[scode class="red"]这里编辑标签内容//[/scode]   
+   $str = preg_replace("/\[msigle\](.*?)\[\/msigle\]/sm",'<iframe class="iframe-music" frameborder="no" border="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=$1&auto=0&height=66"></iframe>',$str);
+}  
+if ( strpos( $str, '[mlist')!== false) {//提高效率，避免每篇文章都要解析
+  //[scode class="red"]这里编辑标签内容//[/scode]   
+   $str = preg_replace("/\[mlist\](.*?)\[\/mlist\]/sm",'<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=$1&auto=0&height=430"></iframe>',$str);
+}
+if ( strpos( $str, '[jline')!== false) {//提高效率，避免每篇文章都要解析
+  //[scode class="red"]这里编辑标签内容//[/scode]   
+   $str = preg_replace("/\[jline\](.*?)\[\/jline\]/sm",'<div class="j-line"><span>$1</span></div>',$str);
+}
+if ( strpos( $str, '[vbili')!== false) {//提高效率，避免每篇文章都要解析
+  //[scode class="red"]这里编辑标签内容//[/scode]   
+   $str = preg_replace("/\[vbili\](.*?)\[\/vbili\]/sm",'<iframe src="https://player.bilibili.com/player.html?aid=76053337&bvid=$1&cid=130096191&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="600" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>',$str);
+}
 
-//提示框短代码
+if ( strpos( $str, '[btn')!== false) {//提高效率，避免每篇文章都要解析
+  //[scode class="red"]这里编辑标签内容//[/scode]   
+   $str = preg_replace('/\[btn.*?href=\"(.*?)\".*?type=\"(.*?)\".*?\](.*?)\[\/btn\]/sm','<a href="$1" class="j-btn" style="background-color:$2;text-decoration:unset !important;color:#fff;" target="_blank"><svg t="1608871933380"style="vertical-align:middle;margin-bottom:.5px;" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3080" width="14" height="14"><path d="M914.56 110.165333a82.474667 82.474667 0 0 0-82.346667-21.461333L145.408 288.384a81.92 81.92 0 0 0-59.050667 64.938667c-6.058667 32 15.146667 72.704 42.794667 89.685333l214.741333 132.010667a55.637333 55.637333 0 0 0 68.693334-8.277334l245.888-247.424a31.317333 31.317333 0 0 1 45.226666 0c12.373333 12.458667 12.373333 32.64 0 45.525334l-246.314666 247.466666c-18.261333 18.346667-21.674667 46.933333-8.234667 69.12l131.2 216.874667c15.36 25.770667 41.813333 40.362667 70.826667 40.362667 3.413333 0 7.253333 0 10.709333-0.426667 33.28-4.266667 59.733333-27.050667 69.546667-59.306667l203.648-685.866666c8.96-29.226667 0.853333-61.013333-20.48-82.901334z" fill="#ffffff" p-id="3081"></path></svg> $3</a>',$str);
+}
+if ( strpos( $str, '[btn')!== false) {//提高效率，避免每篇文章都要解析
+  //[scode class="red"]这里编辑标签内容//[/scode]   
+   $str = preg_replace('/\[btn.*?href=\"(.*?)\".*?type=\"(.*?)\".*?\](.*?)\[\/btn\]/sm','<a href="$1" class="j-btn" style="background-color:$2;color:#fff;" target="_blank"><svg t="1608871933380"style="vertical-align:middle;margin-bottom:.5px;" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3080" width="14" height="14"><path d="M914.56 110.165333a82.474667 82.474667 0 0 0-82.346667-21.461333L145.408 288.384a81.92 81.92 0 0 0-59.050667 64.938667c-6.058667 32 15.146667 72.704 42.794667 89.685333l214.741333 132.010667a55.637333 55.637333 0 0 0 68.693334-8.277334l245.888-247.424a31.317333 31.317333 0 0 1 45.226666 0c12.373333 12.458667 12.373333 32.64 0 45.525334l-246.314666 247.466666c-18.261333 18.346667-21.674667 46.933333-8.234667 69.12l131.2 216.874667c15.36 25.770667 41.813333 40.362667 70.826667 40.362667 3.413333 0 7.253333 0 10.709333-0.426667 33.28-4.266667 59.733333-27.050667 69.546667-59.306667l203.648-685.866666c8.96-29.226667 0.853333-61.013333-20.48-82.901334z" fill="#ffffff" p-id="3081"></path></svg> $3</a>',$str);
+}
+
+//提示框短代码<iframe src="//player.bilibili.com/player.html?aid=970721566&bvid=BV12p4y1q742&cid=266892321&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 if ( strpos( $str, '[scode')!== false) {//提高效率，避免每篇文章都要解析
   //[scode class="red"]这里编辑标签内容//[/scode]   
-   $str = preg_replace("/\[scode\](.*?)\[\/scode\]/sm",'<div class="tip ">$1</div>',$str);
+   $str = preg_replace('/\[scode.*?type=\"(.*?)\".*?\](.*?)\[\/scode\]/sm','<div class="j-alt $1">$2</div>',$str);
 }  
-  
+    /* 图片短代码 */
+if ( strpos( $str, '[photo')!== false) {//提高效率，避免每篇文章都要解析
+   $str = preg_replace("/\[photo\](.*?)\[\/photo\]/sm",'<div class="photos ">$1</div>',$str);
+}
+
 //调用其他文章短代码
 if ( strpos( $str, '[post')!== false) {//提高效率，避免每篇文章都要解析  
    preg_match_all("/\[post\](.*?)\[\/post\]/sm",$str,$strcid);
@@ -874,3 +903,15 @@ while (isset($stack[$i])) {
 <?php
     }
 }
+
+/**     * 访问总量     */
+function theAllViews(){	$db = Typecho_Db::get();
+	$row = $db->fetchAll('SELECT SUM(VIEWS) FROM `typecho_contents`');
+	echo number_format($row[0]['SUM(VIEWS)']);
+	}
+/*** 文章字数统计*调用<?php art_count($this->cid); ?>*/
+	function  art_count ($cid){    $db=Typecho_Db::get ();
+    $rs=$db->fetchRow ($db->select ('table.contents.text')->from ('table.contents')->where ('table.contents.cid=?',$cid)->order ('table.contents.cid',Typecho_Db::SORT_ASC)->limit (1));
+    $text = preg_replace("/[^\x{4e00}-\x{9fa5}]/u", "", $rs['text']);
+    echo mb_strlen($text,'UTF-8');
+	}

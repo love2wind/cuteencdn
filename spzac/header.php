@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <?php if($this->options->favicon): ?><link rel="shortcut icon" href="<?php $this->options->favicon(); ?>"><?php endif;?>
 	<!-- CSS -->
-	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/bootstrap-reboot.min.css'); ?>">
-	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/bootstrap-grid.min.css'); ?>">
-	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/ionicons.min.css'); ?>">
-	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/main.css'); ?>"> 
-	<meta name="author" content="小小灯泡">
+	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/css/main.css">-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="<?php $this->options->themeUrl('css/main.css'); ?>">  
+	<!--<link rel="stylesheet" href="<?php //$this->options->themeUrl('css/ionicons.min.css'); ?>">-->
+	<!--<link rel="stylesheet" href="<?php //$this->options->themeUrl('css/bootstrap-reboot.min.css'); ?>">-->
+	<!--<link rel="stylesheet" href="<?php //$this->options->themeUrl('css/bootstrap-grid.min.css'); ?>">-->
+	<meta name="author" content="love2wind">
 	<title><?php if($this->_currentPage>1) echo '第 '.$this->_currentPage.' 页 - '; ?><?php $this->archiveTitle(array(
             'category'  =>  _t('%s '),
             'search'    =>  _t('包含关键字 %s 的内容'),
@@ -30,7 +33,8 @@
 <link rel="canonical" href="<?php $this->permalink() ?>"/>
 <script src="//msite.baidu.com/sdk/c.js?appid=<?php $this->options->baiduappdi(); ?>"></script>
 <?php endif; ?><?php endif; ?>
-<script src="<?php $this->options->themeUrl('js/highlight.pack.js'); ?>"></script>
+<!--<script src="<?php //$this->options->themeUrl('js/highlight.pack.js'); ?>"></script>-->
+<script src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
