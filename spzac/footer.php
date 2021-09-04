@@ -23,7 +23,7 @@
 			</div>
 		</div>
 	</footer>
-
+     <?php $this->need('footerdown.php'); ?>
 <!-- JS -->
 	<!--<script src="<?php //$this->options->themeUrl('js/jquery-3.4.1.min.js'); ?>"></script>-->
 	<!--<script src="<?php //$this->options->themeUrl('js/bootstrap.bundle.min.js'); ?>"></script>-->

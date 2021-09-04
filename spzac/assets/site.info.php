@@ -110,7 +110,7 @@
 					}*/
 					var now =new Date(); 
 					function StorageTime() { 
-						var grt= new Date("11/05/2018 00:00:00");//时间格式：月/日/年  时/分/秒
+						var grt= new Date("11/27/2011 00:00:00");//时间格式：月/日/年  时/分/秒
 						now.setTime(now.getTime()+250); 
 						years = Math.floor((now - grt ) / 1000 / 60 / 60 / 24 /365);
 						days = Math.floor((now - grt ) / 1000 / 60 / 60 / 24 - (years * 365)); 
@@ -120,7 +120,8 @@
 						if(String(minutes).length ==1 ){minutes = "0" + minutes;}
 						seconds = Math.floor((now - grt ) / 1000 - (24 * 60 * 60 * Math.floor((now - grt ) / 1000 / 60 / 60 / 24)) - (60 * 60 * hours) - (60 * minutes)); 
 						if(String(seconds).length ==1 ){seconds = "0" + seconds;}
-						if(years!=0){var outputtime=+years+"年"+days+"天"+hours+"时"+minutes+"分"+seconds+"秒";}else{var outputtime=+days+"天"+hours+"时"+minutes+"分"+seconds+"秒";}
+					/*	if(years!=0){var outputtime=+years+"年"+days+"天"+hours+"时"+minutes+"分"+seconds+"秒";}else{var outputtime=+days+"天"+hours+"时"+minutes+"分"+seconds+"秒";}*/
+						if(years!=0){var outputtime=+years+"年"+days+"天"+hours+"时";}else{var outputtime=+days+"天"+hours+"时"+minutes+"分";}
 						/*document.getElementById("span_dt_dt").style.color="#"+colorStr;*/
 						document.getElementById("span_dt_dt").innerHTML = outputtime;
 					} 
