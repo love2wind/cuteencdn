@@ -31,7 +31,7 @@
 					setInterval("StorageTime()",250);
 					</script>
               <p>Love2wind.CN【白茶清欢无别事，我在等风也等你】</p>
-              <p>风风雨雨<span id ="span_dt_dt">N</span>，你是第<?php echo theAllViews();?>位相遇的小伙伴</p>
+              <p>风风雨雨<span id ="span_dt_dt"></span>，你是第<?php echo theAllViews();?>位相遇的小伙伴</p>
           </div>
         </div>
         <div class="fr site-fav">
