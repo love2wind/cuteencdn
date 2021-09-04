@@ -36,7 +36,7 @@
         <div class="fr site-fav">
           <a href="https://love2wind.cn/" class="btn btn-fav btn-orange">Ctrl+D收藏本站</a></div>
         <div class="site-girl">
-            <div class="girl fl"> <i class="thumb " style="background-image:url(https://cdn.jsdelivr.net/gh/cy-j/chenyu/img/cyxy.png);"></i> </div>
+            <div class="girl fl"> <i class="thumb " style="background-image:url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@3.5/spzac/img/hjbj.png);"></i> </div>
             <div class="girl-info hide_md">
               <h4>绿水本无忧，因风皱面</h4>
               <h4>青山原不老，为雪白头</h4>

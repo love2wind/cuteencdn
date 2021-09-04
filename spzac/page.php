@@ -32,7 +32,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
       <?php if (($this->fields->videourl)&&($this->options->pdmapi)):?>
       <?php $this->need('dmplay/post - dmplay.php'); ?>
       <?php endif; ?> 
-				<h2 class="post__title"><?php $this->title(); ?></h2>
+				<h2 class="post__title_c"><span><?php $this->title(); ?></span></h2>
 				<div class="post__description conts" id="j-article"> 
 				<?php $str=$this->content; echo costcn($this->cid,$this->remember('mail',true),$str,$this->user->hasLogin()); ?>				                      
 <!--赞赏-->
