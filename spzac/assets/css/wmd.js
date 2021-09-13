@@ -119,7 +119,7 @@ window.onload = function () {
 
             $(document).on('click', '#wmd-text-button', function() {//标签
 
-                textContent = '[scode type="success|info|warning|error"]成功提示的文案[/scode]';
+                textContent = '[scode type="success|info|warning|error|tips|"]成功提示的文案[/scode]';
 
                 myField = document.getElementById('text');
                 inserContentToTextArea(myField,textContent);
