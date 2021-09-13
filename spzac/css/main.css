@@ -2548,9 +2548,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .elv1{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico1.png);}
 .elv14{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico14.png);}
 .elv15{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico15.png);}
+.elv23{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico23.png);}
 .elv24{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico24.png);}
 .elv516{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico516.png);}
 .elv517{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico517.png);}
+.elv520{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico520.png);}
 .elv599{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico599.png);}
 .elv601{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico601.png);}
 .elv602{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico602.png);}
@@ -2558,6 +2560,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .elv619{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico619.png);}
 .elv620{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico620.png);}
 .elv622{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico622.png);}
+.elv666{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico666.png);}
 /*==============================
 	Post
 ==============================*/
@@ -3236,13 +3239,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 	margin: 10px 0;
     padding-left: 20px;
 }
-.post__description h1,h2,h3,h4,h5,h6{margin-bottom: 1rem; }
+/*.post__description h1,h2,h3,h4,h5,h6{margin-bottom: 1rem; }
 .post__description h3 {
     position: relative;
     font-size: 1.125rem;
     padding-left: 20px;
 }
-/*.post__description h3:before {
+.post__description h3:before {
     content: '';
     position: absolute;
     top: 15px;
@@ -3304,11 +3307,11 @@ height: 1px;
     border: 0;
     background-color: #EBF1F8;
 }  
-.post__description h2 {
+/*.post__description h2 {
     font-size: 1.25rem;
     border-left: 3px solid #448EF6;
     padding-left: 15px;
-}
+}*/
 .post__description p:first-child {
   margin-top: 0;
 }
