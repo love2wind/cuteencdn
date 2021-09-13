@@ -620,7 +620,10 @@ function compressHtml($html_source) {
 
 /** 后台编辑器文章输出 */
 function costcn($cid,$mid,$str,$status){
-  
+/*给外链加上class*/
+ /*   $str = preg_replace("/<a href=\"([^\"]*)\">/i", "<a href=\"\\1\" class=\"external-link\" target=\"_blank\" rel=\"nofollow\">", $str);*/
+/*TIP标签 */
+$str = preg_replace("/<p>\!\>\s(.*?)<\/p>/sm",'<p class="tip">$1</p>',$str);
 //回复可见
 if ( strpos( $str, '[hide')!== false) {//提高效率，避免每篇文章都要解析  
   
