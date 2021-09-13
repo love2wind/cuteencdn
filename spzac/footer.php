@@ -30,10 +30,10 @@
 	<!--<script src="<?php //$this->options->themeUrl('js/bootstrap.bundle.min.js'); ?>"></script>-->
 	<!--<script src="<?php //$this->options->themeUrl('js/main.js'); ?>"></script>-->
     <!--<script src="<?php //$this->options->themeUrl('js/i.js'); ?>"></script>-->
-	<script src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/js/jquery-3.4.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/js/i.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/js/i.js"></script>
    
 <?php if ($this->is('post')) : ?>
 <?php if ($this->fields->img): ?><nocompress><?php $this->need('assets/poster.php'); ?></nocompress><?php endif; ?>

@@ -717,7 +717,7 @@ a:hover {
     width: 30px;
     height: 34px;
     right: -30px;    
-    background: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/upiocn.png) no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/upiocn.png) no-repeat;
     z-index: 20;
     top: 0;
 }
@@ -2545,22 +2545,22 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .egg{background-position: right 0% center;
     background-repeat: no-repeat;
     background-size: auto 100%;}
-.elv1{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico1.png);}
-.elv14{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico14.png);}
-.elv15{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico15.png);}
-.elv23{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico23.png);}
-.elv24{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico24.png);}
-.elv516{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico516.png);}
-.elv517{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico517.png);}
-.elv520{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico520.png);}
-.elv599{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico599.png);}
-.elv601{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico601.png);}
-.elv602{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico602.png);}
-.elv604{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico604.png);}
-.elv619{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico619.png);}
-.elv620{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico620.png);}
-.elv622{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico622.png);}
-.elv666{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/img/egg/bg-ico666.png);}
+.elv1{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico1.png);}
+.elv14{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico14.png);}
+.elv15{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico15.png);}
+.elv23{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico23.png);}
+.elv24{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico24.png);}
+.elv516{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico516.png);}
+.elv517{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico517.png);}
+.elv520{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico520.png);}
+.elv599{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico599.png);}
+.elv601{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico601.png);}
+.elv602{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico602.png);}
+.elv604{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico604.png);}
+.elv619{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico619.png);}
+.elv620{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico620.png);}
+.elv622{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico622.png);}
+.elv666{background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/img/egg/bg-ico666.png);}
 /*==============================
 	Post
 ==============================*/
@@ -5473,84 +5473,84 @@ display: inline-block;
 .comment-ua{font-size: 10px;}
 
 .icon-360 {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/360.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/360.png)
 }
 
 .icon-android {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/android.png);
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/android.png);
 	height: 19px
 }
 
 .icon-apple {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/apple.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/apple.png)
 }
 
 .icon-baidu {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/baidu.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/baidu.png)
 }
 
 .icon-chrome {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/chrome.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/chrome.png)
 }
 
 .icon-edge {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/edge.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/edge.png)
 }
 
 .icon-firefox {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/firefox.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/firefox.png)
 }
 
 .icon-google {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/google.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/google.png)
 }
 
 .icon-ie {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/ie.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/ie.png)
 }
 
 .icon-liebao {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/liebao.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/liebao.png)
 }
 
 .icon-linux {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/linux.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/linux.png)
 }
 
 .icon-mac {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/mac.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/mac.png)
 }
 
 .icon-opera {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/opera.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/opera.png)
 }
 
 .icon-qq {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/qq.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/qq.png)
 }
 
 .icon-quark {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/quark.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/quark.png)
 }
 
 .icon-safari {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/safari.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/safari.png)
 }
 
 .icon-ubuntu {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/ubuntu.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/ubuntu.png)
 }
 
 .icon-uc {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/uc.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/uc.png)
 }
 
 .icon-win1 {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/win1.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/win1.png)
 }
 
 .icon-win2 {
-	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/icon/UA/win2.png)
+	background-image: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/icon/UA/win2.png)
 }
 
 
@@ -6152,7 +6152,7 @@ position: relative;
 .comiis_poster_x {
 	width: 100%;
 	height: 45px;
-	background: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.3/spzac/poster/img/poster_x.jpg) repeat-x center;
+	background: url(https://cdn.jsdelivr.net/gh/love2wind/blogcdn@v3.5/spzac/poster/img/poster_x.jpg) repeat-x center;
 	overflow: hidden
 }
 
