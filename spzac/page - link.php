@@ -21,7 +21,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<!-- header -->
                <?php $this->need('user - sider.php'); ?>
 	            <!-- end header -->
-  
+
                <div class="col-12 col-md-7 col-lg-8 col-xl-9 author_one">
 
                    <!-- view big -->
@@ -67,51 +67,52 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                                              
                              <!--积分规则-->
                       
-                             <div class="main__box">
-								<h3 class="main__box-title">友情链接</h3>
-								
-                              <div class="bg_cl">  
-                                 <!--s-->
-<p class="main__box-text">本站仅免费提供友情链接交换平台服务（申请联系站长QQ）上榜条件：</p>
-                               <p class="main__box-text">1，必须为本站的主题，并且做有本站的友情链接</p>
-                               <p class="main__box-text">2，有一定的内容，且内容健康丰富，并基本建设完成</p>
-                               <p class="main__box-text">3，申请友情链接前，请先在贵站做上本站的友情链接  </p>
-                               <p class="main__box-text">切记必须要本站的主题模板才行，不限行业，优秀的部分主题将在本站进行推荐。</p>
-                                  <!--e-->
-                                  
-                               </div> 
-                               
-                               <br/><br/>
-                               <h3 class="main__box-title">我要留言</h3>
-                               <?php $this->need('comments.php'); ?>
-                                 
+								<div class="main__box">
+									<h3 class="main__box-title">
+										友情申请
+									</h3>
+									<div class="bg_cl">
+										<p class="main__box-text">
+											<b>添加友链前请先确认是否满足以下条件：</b>
+										</p>
+										<p class="main__box-text">
+											1.<b>先友后链</b>（先在贵站添加本站的链接）
+										</p>
+										<p class="main__box-text">
+											名称：涅槃博客<br/>
+                                            链接：https://love2wind.cn<br/>
+                                            头像：https://cdn.jsdelivr.net/gh/love2wind/cloudimg/img/6ed76e55fd59d8c931f838430fc6aaf0.webp<br/>
+                                            网站截图：https://cdn.jsdelivr.net/gh/love2wind/cloudimg/img/c40b73b245299bfe6f6e0503b26c4ebb.webp<br/>
+                                            描述：记录生活、分享世界。
+										</p>
+										<p class="main__box-text">
+											2.贵站有一定的内容，且内容健康丰富；
+										</p>
+										<p class="main__box-text">
+											3.按照以下格式留言，等待站长审核通过后立即添加。
+										</p>
+										<p class="main__box-text">
+                                            网站名称：<br/>
+                                            网站链接：<br/>
+                                            网站图标：<br/>
+                                            网站描述：<br/>
+										</p>
+									</div>
+                                </div>
+                                <div class="main__box">
+									<h3 class="main__box-title">
+										我要申请
+									</h3>
+									<!-- comments --> 
+									<?php $this->need('comments.php'); ?>
+									<!-- end comments -->
+								</div>
 							</div>
-                      
-                      
-                             <!--积分规则-->
-                           
-                            
-                            
-                            
-                      
-                      
-					<!-- end post -->
-                    </div>
-
-
-                      
-                      
-                      
-                     </div>
-
-					 <!-- end big -->
-              </div>
-              
-              
-              
-          </div>
-		</div>
-	</main>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
     <div class="typecho-login" style="display: none;"></div>
 	<!-- end main content -->
 
